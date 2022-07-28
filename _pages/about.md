@@ -9,14 +9,16 @@ profile:
   image: prof_pic.jpg
   image_cicular: false # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>312 John Crerar Library</p>
+    <p>5730 S Ellis Ave</p>
+    <p>Chicago, IL 60637</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
+
+I conduct research focused on building smart systems for AI in edge computing infrastructure, more succinctly called *Edge Intelligence*. I also dive into applications of EI for smart city applications (e.g., smart traffic, smart energy).
 
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 

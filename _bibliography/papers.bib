@@ -3,80 +3,138 @@
 
 @string{aps = {American Physical Society,}}
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation,},
-  preview={brownian-motion.gif}
+
+@article{hudson2022smart,
+  abbr        = {SMARTCOMP},
+  bibtex_show = {true},
+  title       = {Smart Edge-Enabled Traffic Light Control: Improving Reward-Communication Trade-offs with Federated Reinforcement Learning},
+  abstract    = {Traffic congestion is a costly phenomenon of every-day life. Reinforcement Learning (RL) is a promising solution due to its applicability to solving complex decision-making problems in highly dynamic environments. To train smart traffic lights using RL, large amounts of data is required. Recent RL-based approaches consider training to occur on some nearby server or a remote cloud server. However, this requires that traffic lights all communicate their raw data to some central location. For large road systems, communication cost can be impractical, particularly if traffic lights collect heavy data (e.g., video, LIDAR). As such, this work pushes training to the traffic lights directly to reduce communication cost. However, completely independent learning can reduce the performance of trained models. As such, this work considers the recent advent of Federated Reinforcement Learning (FedRL) for edge-enabled traffic lights so they can learn from each other's experience by periodically aggregating locally-learned policy network parameters rather than share raw data, hence keeping communication costs low. To do this, we propose the SEAL framework which uses an intersection-agnostic representation to support FedRL across traffic lights controlling heterogeneous intersection types. We then evaluate our FedRL approach against Centralized and Decentralized RL strategies. We compare the reward-communication trade-offs of these strategies. Our results show that FedRL is able to reduce the communication costs associated with Centralized training by 36.24%; while only seeing a 2.11% decrease in average reward (i.e., decreased traffic congestion).},
+  author      = {Hudson, Nathaniel and Oza, Pratham and Khamfroush, Hana and Thidapat, Chantem},
+  journal     = {American Journal of Physics,},
+  volume      = {18},
+  number      = {6},
+  pages       = {403--404},
+  year        = {2022},
+  publisher   = {American Association of Physics Teachers,}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers,}
+
+@article{hudson2021qos,
+  abbr        = {ICCCN},
+  bibtex_show = {true},
+  title       = {QoS-Aware Placement of Deep Learning Services on the Edge with Multiple Service Implementations},
+  abstract    = {Mobile edge computing pushes computationally-intensive services closer to the user to provide reduced delay due to physical proximity. This has led many to consider deploying deep learning models on the edge – commonly known as edge intelligence (EI). EI services can have many model implementations that provide different QoS. For instance, one model can perform inference faster than another (thus reducing latency) while achieving less accuracy when evaluated. In this paper, we study joint service placement and model scheduling of EI services with the goal to maximize Quality-of-Servcice (QoS) for end users where EI services have multiple implementations to serve user requests, each with varying costs and QoS benefits. We cast the problem as an integer linear program and prove that it is NP-hard. We then prove the objective is equivalent to maximizing a monotone increasing, submodular set function and thus can be solved greedily while maintaining a (1 – 1/e)-approximation guarantee. We then propose two greedy algorithms: one that theoretically guarantees this approximation and another that empirically matches its performance with greater efficiency. Finally, we thoroughly evaluate the proposed algorithm for making placement and scheduling decisions in both synthetic and real-world scenarios against the optimal solution and some baselines. In the real-world case, we consider real machine learning models using the ImageNet 2012 data-set for requests. Our numerical experiments empirically show that our more efficient greedy algorithm is able to approximate the optimal solution with a 0.904 approximation on average, while the next closest baseline achieves a 0.607 approximation on average.},
+  author      = {Hudson, Nathaniel and Khamfroush, Hana and Lucani, Daniel E.},
+  journal     = {American Journal of Physics,},
+  volume      = {18},
+  number      = {6},
+  pages       = {403--404},
+  year        = {2021},
+  publisher   = {American Association of Physics Teachers,},
+  pdf         = {hudson2021qos.pdf},
+  selected    = {true}
+}
+
+
+@article{hudson2021framework,
+  abbr        = {ICCCN},
+  bibtex_show = {true},
+  title       = {A Framework for Edge Intelligent Smart Distribution Grids via Federated Learning},
+  abstract    = {Recent advances in distributed data processing and machine learning provide new opportunities to enable critical, time-sensitive functionalities of smart distribution grids in a secure and reliable fashion. Combining the recent advents of edge computing (EC) and edge intelligence (EI) with existing advanced metering infrastructure (AMI) has the potential to reduce overall communication cost, preserve user privacy, and provide improved situational awareness. In this paper, we provide an overview for how EC and EI can supplement applications relevant to AMI systems. Additionally, using such systems in tandem can enable distributed deep learning frameworks (e.g., federated learning) to empower distributed data processing and intelligent decision making for AMI. Finally, to demonstrate the efficacy of this considered architecture, we approach the non-intrusive load monitoring (NILM) problem using federated learning to train a deep recurrent neural network architecture in a 2-tier and 3-tier manner. In this approach, smart homes locally train a neural network using their metering data and only share the learned model parameters with AMI components for aggregation. Our results show this can reduce communication cost associated with distributed learning, as well as provide an immediate layer of privacy, due to no raw data being communicated to AMI components. Further, we show that FL is able to closely match the model loss provided by standard centralized deep learning where raw data is communicated for centralized training.},
+  author      = {Hudson, Nathaniel and Hossain, Md Jakir and Hosseinzadeh, Minoo and Khamfroush, Hana and Rahnamay-Naeini, Mahshid and Ghani, Nasir},
+  journal     = {American Journal of Physics,},
+  volume      = {18},
+  number      = {6},
+  pages       = {403--404},
+  year        = {2021},
+  publisher   = {American Association of Physics Teachers,}
+}
+
+
+
+@article{hosseinzadeh2021joint,
+  abbr        = {DySPAN},
+  bibtex_show = {true},
+  title       = {Joint Compression and Offloading Decisions for Deep Learning Services in 3-Tier Edge Systems},
+  abstract    = {Task offloading in edge computing infrastructure remains a challenge for dynamic and complex environments, such as Industrial Internet-of-Things. The hardware resource constraints of edge servers must be explicitly considered to ensure that system resources are not overloaded. Many works have studied task offloading while focusing primarily on ensuring system resilience. However, in the face of deep learning-based services, model performance with respect to loss/accuracy must also be considered. Deep learning services with different implementations may provide varying amounts of loss/accuracy while also being more complex to run inference on. That said, communication latency can be reduced to improve overall Quality-of-Service by employing compression techniques. However, such techniques can also have the side-effect of reducing the loss/accuracy provided by deep learning-based service. As such, this work studies a joint optimization problem for task offloading decisions in 3-tier edge computing platforms where decisions regarding task offloading are made in tandem with compression decisions. The objective is to optimally offload requests with compression such that the trade-off between latency-accuracy is not greatly jeopardized. We cast this problem as a mixed integer nonlinear program. Due to its nonlinear nature, we then decompose it into separate subproblems for offloading and compression. An efficient algorithm is proposed to solve the problem. Empirically, we show that our algorithm attains roughly a 0.958-approximation of the optimal solution provided by a block coordinate descent method for solving the two sub-problems back-to-back.},
+  author      = {Hosseinzadeh, Minoo and Hudson, Nathaniel and Zhao, Xiaobo and Khamfroush, Hana and Lucani, Daniel E.},
+  journal     = {American Journal of Physics,},
+  volume      = {18},
+  number      = {6},
+  pages       = {403--404},
+  year        = {2021},
+  publisher   = {American Association of Physics Teachers,}
+}
+
+
+
+
+
+
+
+
+
+@book{einstein1956investigations,
+  bibtex_show = {true},
+  title       = {Investigations on the Theory of the Brownian Movement},
+  author      = {Einstein, Albert},
+  year        = {1956},
+  publisher   = {Courier Corporation,},
+  preview     = {brownian-motion.gif}
 }
 
 @article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.,},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  selected={true}
+  abbr      = {PhysRev},
+  title     = {Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
+  author    = {Einstein, A. and Podolsky, B. and Rosen, N.},
+  abstract  = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
+  journal   = {Phys. Rev.,},
+  volume    = {47},
+  issue     = {10},
+  pages     = {777--780},
+  numpages  = {0},
+  year      = {1935},
+  month     = {May},
+  publisher = aps,
+  doi       = {10.1103/PhysRev.47.777},
+  url       = {http://link.aps.org/doi/10.1103/PhysRev.47.777},
+  html      = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
+  pdf       = {example_pdf.pdf},
+  selected  = {true}
 }
 
 @article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+  title     = {{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
+  author    = {Einstein, A.},
+  journal   = {Annalen der physik,},
+  volume    = {322},
+  number    = {8},
+  pages     = {549--560},
+  year      = {1905},
+  publisher = {Wiley Online Library}
 }
 
 @article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  pages={549--560},
-  year={1905}
+  abbr    = {Ann. Phys.},
+  title   = {Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
+  author  = {Einstein, A.},
+  journal = {Ann. Phys.,},
+  volume  = {17},
+  pages   = {549--560},
+  year    = {1905}
 }
 
 @article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+  title  = {On the electrodynamics of moving bodies},
+  author = {Einstein, A.},
+  year   = {1905}
 }
 
 @book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+  bibtex_show = {true},
+  title       = {Letters on wave mechanics},
+  author      = {Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
+  year        = {1967},
+  publisher   = {Vision},
+  preview     = {wave-mechanics.gif}
 }
