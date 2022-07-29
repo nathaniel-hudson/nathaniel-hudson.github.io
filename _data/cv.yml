@@ -3,95 +3,106 @@
   contents:
     - name: Full Name
       value: Nathaniel Hudson
-    - name: Date of Birth
-      value: 28th February 1995
+    # - name: Date of Birth
+    #   value: 28th February 1995
     - name: Languages
       value: English
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Doctor of Philosophy (Ph.D.) — Computer Science
+      institution: University of Kentucky; Lexington, Kentucky, United States
+      year: 2022
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Dissertation&#58; &ldquo;Smart Decision-Making via Edge Intelligence for Smart Cities&rdquo;
+        - Advisor&#58; Dr. Hana Khamfroush
+    - title: Master of Science (M.S.) — Computer Science
+      institution: University of Kentucky; Lexington, Kentucky, United States
+      year: 2021
       description:
-        - Description 1.
-        - Description 2.
+        - En-Passant Masters degree awarded while on track to complete the Ph.D. degree program.
+    - title: Bachelor of Science (B.S.) — Computer Science
+      institution: Northern Kentucky University; Highland Heights, Kentucky, United States
+      year: 2017
+      description:
+        - Minor&#58; Mathematics
+        - Honors Distinctions
+        - Cum Laude
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Postdoctoral Scholar
+      institution: Department of Computer Science, University of Chicago
+      year: 2022 -
+      # description:
+      #   - Description 1.
+      #   - Description 2.
+      #   - title: Description 3.
+      #     contents:
+      #       - Sub-description 1.
+      #       - Sub-description 2.
+    - title: Graduate Assistant
+      institution: Department of Computer Science, University of Kentucky
+      year: 2017 - 2022
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - Research Assistant&#58; 2019-2022
+        - Teaching Assistant&#58; 2017-2019
+
+    - title: Academic Tutor
+      institution: Learning Assistance Programs; Highland Heights, Kentucky, United States
+      year: 2014-2017
+      description:
+        - title: Provided one-on-one and group instruction for the following courses&#58;
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
+            - Pre-Calculus
+            - Discrete Mathematics
+            - Elementary Programming
+            - Business Programming
+            - Object-Oriented Programming I
+            - Object-Oriented Programming II
+            - Data Structures &amp; Algorithms
+            - Theory of Computation
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+# - title: Open Source Projects
+#   type: time_table
+#   contents:
+#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+#       year: 2015-now
+#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2022
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - <a href="/news/diverse-rising-scholar">Issues in Diverse Education Rising Scholar</a>
+    - year: 2021
       items:
-        - Max Planck Medal
+        - Outstanding Student Paper for <a href="https://ieeexplore.ieee.org/abstract/document/9241429?casa_token=QDFBIaN_Ru8AAAAA:nnkNgEvkUVvMRALPF78CjJ7ZuJcREw2FW11hZhIAjgxZK2wAHF_Zjpaf88pMARKitZVxqZkrUYc">"Behavioral Information Diffusion for Opinion Maximization in Online Social Networks"</a>, awarded by the *University of Kentucky Department of Computer Science*
+        - University of Kentucky Graduate Student Congress Conference Travel Award ($500.00)
+        - NSF IEEE INFOCOM Student Travel Grant ($225.00)
+    - year: 2020
+      items:
+        - NSF IEEE SMARTCOMP Student Travel Grant
+    - year: 2019
+      items:
+        - Web and Internet Economics (WINE) Conference Student Travel Grant
+        - University of Kentucky Computer Science Departmental Travel Grant (2x)
+# - title: Academic Interests
+#   type: nested_list
+#   contents:
+#     - title: Topic 1.
+#       items:
+#         - Description 1.
+#         - Description 2.
+#     - title: Topic 2.
+#       items:
+#         - Description 1.
+#         - Description 2.
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+# - title: Other Interests
+#   type: list
+#   contents:
+#     - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.

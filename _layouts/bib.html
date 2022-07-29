@@ -24,7 +24,18 @@
           {{reference}}
         {%- else %}
           <!-- Title -->
-          <div class="title">{{entry.title}}</div>
+          <div class="title">
+            <!--
+            {%- if entry.type == "article" -%}
+              <i class="fas fa-book"></i>
+            {%- elsif entry.type == "inproceedings" -%}
+              <i class="fas fa-presentation-screen"></i>
+            {%- elsif entry.type == "preprint" -%}
+              <i class="ai ai-arxiv-square ai-3x"></i>
+            {%- endif -%}
+            -->
+            &ldquo;{{entry.title}}&rdquo;
+          </div>
           <!-- Author -->
           <div class="author">
           {% assign author_array_size = entry.author_array | size %}
@@ -51,7 +62,7 @@
                 {%- endif -%}
               {%- endfor -%}
             {%- endif -%}
-            
+
             {%- if forloop.length == 1 -%}
               {%- if author_is_self %}
                 <em>{{author.last}}, {{author.first}}</em>
@@ -138,7 +149,7 @@
             {{ periodical | strip }}
           </div>
         {%- endif %}
-        
+
           <!-- Links/Buttons -->
           <div class="links">
           {%- if entry.abstract %}

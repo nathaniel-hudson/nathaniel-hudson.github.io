@@ -3,6 +3,7 @@
 ---
 @charset "utf-8";
 
+
 // Dimensions
 $max-content-width: {{ site.max_width }};
 
@@ -13,3 +14,8 @@ $max-content-width: {{ site.max_width }};
   "base",
   "distill"
 ;
+
+.news-date {
+    white-space: nowrap;
+    font-weight: bold;
+}

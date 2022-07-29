@@ -2,72 +2,207 @@
 ---
 
 @string{aps = {American Physical Society,}}
+@string{ieee = {Institute of Electrical and Electronics Engineers}}
 
 
-@article{hudson2022smart,
+@inproceedings{hudson2022smart,
   abbr        = {SMARTCOMP},
-  bibtex_show = {true},
   title       = {Smart Edge-Enabled Traffic Light Control: Improving Reward-Communication Trade-offs with Federated Reinforcement Learning},
   abstract    = {Traffic congestion is a costly phenomenon of every-day life. Reinforcement Learning (RL) is a promising solution due to its applicability to solving complex decision-making problems in highly dynamic environments. To train smart traffic lights using RL, large amounts of data is required. Recent RL-based approaches consider training to occur on some nearby server or a remote cloud server. However, this requires that traffic lights all communicate their raw data to some central location. For large road systems, communication cost can be impractical, particularly if traffic lights collect heavy data (e.g., video, LIDAR). As such, this work pushes training to the traffic lights directly to reduce communication cost. However, completely independent learning can reduce the performance of trained models. As such, this work considers the recent advent of Federated Reinforcement Learning (FedRL) for edge-enabled traffic lights so they can learn from each other's experience by periodically aggregating locally-learned policy network parameters rather than share raw data, hence keeping communication costs low. To do this, we propose the SEAL framework which uses an intersection-agnostic representation to support FedRL across traffic lights controlling heterogeneous intersection types. We then evaluate our FedRL approach against Centralized and Decentralized RL strategies. We compare the reward-communication trade-offs of these strategies. Our results show that FedRL is able to reduce the communication costs associated with Centralized training by 36.24%; while only seeing a 2.11% decrease in average reward (i.e., decreased traffic congestion).},
   author      = {Hudson, Nathaniel and Oza, Pratham and Khamfroush, Hana and Thidapat, Chantem},
-  journal     = {American Journal of Physics,},
+  booktitle   = {2022 IEEE International Conference on Smart Computing (SMARTCOMP),},
   volume      = {18},
   number      = {6},
   pages       = {403--404},
+  month       = {July},
   year        = {2022},
-  publisher   = {American Association of Physics Teachers,}
+  publisher   = ieee,
+  bibtex_show = {true},
+  preview     = {SEAL-traffic-anim.gif},
+  selected    = {true}
 }
 
+@phdthesis{dissertation,
+  abbr   = {Thesis},
+  author = {Hudson, Nathaniel},
+  school = {University of Kentucky},
+  title  = {Smart Decision-Making via Edge Intelligence for Smart Cities},
+  month  = {May},
+  year   = {2022},
+  html   = {https://uknowledge.uky.edu/cs_etds/117/},
+  pdf    = {https://uknowledge.uky.edu/cgi/viewcontent.cgi?article=1126&context=cs_etds}
+}
 
-@article{hudson2021qos,
+@inproceedings{hosseinzadeh2022communication,
+  abbr        = {CCNC},
+  author      = {Hosseinzadeh, Minoo and Hudson, Nathaniel and Heshmati, Sam and Khamfroush, Hana},
+  booktitle   = {2022 IEEE 19th Annual Consumer Communications & Networking Conference (CCNC)},
+  title       = {Communication-Loss Trade-Off in Federated Learning: A Distributed Client Selection Algorithm},
+  abstract    = {Mass data generation occurring in the Internet-of-Things (IoT) requires processing to extract meaningful information. Deep learning is commonly used to perform such processing. However, due to the sensitive nature of these data, it is important to consider data privacy. As such, federated learning (FL) has been proposed to address this issue. FL pushes training to the client devices and tasks a central server with aggregating collected model weights to update a global model. However, the transmission of these model weights can be costly, gradually. The trade-off between communicating model weights for aggregation and the loss provided by the global model remains an open problem. In this work, we cast this trade-off problem of client selection in FL as an optimization problem. We then design a Distributed Client Selection (DCS) algorithm that allows client devices to decide to participate in aggregation in hopes of minimizing overall communication cost &#x2014; while maintaining low loss. We evaluate the performance of our proposed client selection algorithm against standard FL and a state-of-the-art client selection algorithm, called Power-of-Choice (PoC), using CIFAR-10, FMNIST, and MNIST datasets. Our experimental results confirm that our DCS algorithm is able to closely match the loss provided by the standard FL and PoC, while on average reducing the overall communication cost by nearly 32.67% and 44.71% in comparison to standard FL and PoC, respectively.},
+  year        = {2022},
+  pages       = {1-6},
+  doi         = {10.1109/CCNC49033.2022.9700601},
+  bibtex_show = {true}
+}
+
+@inproceedings{hudson2021qos,
   abbr        = {ICCCN},
   bibtex_show = {true},
   title       = {QoS-Aware Placement of Deep Learning Services on the Edge with Multiple Service Implementations},
   abstract    = {Mobile edge computing pushes computationally-intensive services closer to the user to provide reduced delay due to physical proximity. This has led many to consider deploying deep learning models on the edge – commonly known as edge intelligence (EI). EI services can have many model implementations that provide different QoS. For instance, one model can perform inference faster than another (thus reducing latency) while achieving less accuracy when evaluated. In this paper, we study joint service placement and model scheduling of EI services with the goal to maximize Quality-of-Servcice (QoS) for end users where EI services have multiple implementations to serve user requests, each with varying costs and QoS benefits. We cast the problem as an integer linear program and prove that it is NP-hard. We then prove the objective is equivalent to maximizing a monotone increasing, submodular set function and thus can be solved greedily while maintaining a (1 – 1/e)-approximation guarantee. We then propose two greedy algorithms: one that theoretically guarantees this approximation and another that empirically matches its performance with greater efficiency. Finally, we thoroughly evaluate the proposed algorithm for making placement and scheduling decisions in both synthetic and real-world scenarios against the optimal solution and some baselines. In the real-world case, we consider real machine learning models using the ImageNet 2012 data-set for requests. Our numerical experiments empirically show that our more efficient greedy algorithm is able to approximate the optimal solution with a 0.904 approximation on average, while the next closest baseline achieves a 0.607 approximation on average.},
   author      = {Hudson, Nathaniel and Khamfroush, Hana and Lucani, Daniel E.},
-  journal     = {American Journal of Physics,},
+  booktitle   = {2021 IEEE International Conference on Computer Communications and Networks (ICCCN) Big Data and Machine Learning for Networking (BDMLN) Workshop},
   volume      = {18},
   number      = {6},
   pages       = {403--404},
   year        = {2021},
-  publisher   = {American Association of Physics Teachers,},
-  pdf         = {hudson2021qos.pdf},
+  publisher   = ieee,
+  arxiv       = {2104.15094},
+  pdf         = {https://par.nsf.gov/servlets/purl/10317528},
   selected    = {true}
 }
 
 
-@article{hudson2021framework,
+@inproceedings{hudson2021framework,
   abbr        = {ICCCN},
-  bibtex_show = {true},
   title       = {A Framework for Edge Intelligent Smart Distribution Grids via Federated Learning},
   abstract    = {Recent advances in distributed data processing and machine learning provide new opportunities to enable critical, time-sensitive functionalities of smart distribution grids in a secure and reliable fashion. Combining the recent advents of edge computing (EC) and edge intelligence (EI) with existing advanced metering infrastructure (AMI) has the potential to reduce overall communication cost, preserve user privacy, and provide improved situational awareness. In this paper, we provide an overview for how EC and EI can supplement applications relevant to AMI systems. Additionally, using such systems in tandem can enable distributed deep learning frameworks (e.g., federated learning) to empower distributed data processing and intelligent decision making for AMI. Finally, to demonstrate the efficacy of this considered architecture, we approach the non-intrusive load monitoring (NILM) problem using federated learning to train a deep recurrent neural network architecture in a 2-tier and 3-tier manner. In this approach, smart homes locally train a neural network using their metering data and only share the learned model parameters with AMI components for aggregation. Our results show this can reduce communication cost associated with distributed learning, as well as provide an immediate layer of privacy, due to no raw data being communicated to AMI components. Further, we show that FL is able to closely match the model loss provided by standard centralized deep learning where raw data is communicated for centralized training.},
   author      = {Hudson, Nathaniel and Hossain, Md Jakir and Hosseinzadeh, Minoo and Khamfroush, Hana and Rahnamay-Naeini, Mahshid and Ghani, Nasir},
-  journal     = {American Journal of Physics,},
-  volume      = {18},
-  number      = {6},
-  pages       = {403--404},
+  booktitle   = {2021 IEEE International Conference on Computer Communications and Networks (ICCCN)},
+  pages       = {1-9},
   year        = {2021},
-  publisher   = {American Association of Physics Teachers,}
+  publisher   = ieee,
+  bibtex_show = {true}
 }
 
 
 
-@article{hosseinzadeh2021joint,
+@inproceedings{hosseinzadeh2021joint,
   abbr        = {DySPAN},
   bibtex_show = {true},
   title       = {Joint Compression and Offloading Decisions for Deep Learning Services in 3-Tier Edge Systems},
   abstract    = {Task offloading in edge computing infrastructure remains a challenge for dynamic and complex environments, such as Industrial Internet-of-Things. The hardware resource constraints of edge servers must be explicitly considered to ensure that system resources are not overloaded. Many works have studied task offloading while focusing primarily on ensuring system resilience. However, in the face of deep learning-based services, model performance with respect to loss/accuracy must also be considered. Deep learning services with different implementations may provide varying amounts of loss/accuracy while also being more complex to run inference on. That said, communication latency can be reduced to improve overall Quality-of-Service by employing compression techniques. However, such techniques can also have the side-effect of reducing the loss/accuracy provided by deep learning-based service. As such, this work studies a joint optimization problem for task offloading decisions in 3-tier edge computing platforms where decisions regarding task offloading are made in tandem with compression decisions. The objective is to optimally offload requests with compression such that the trade-off between latency-accuracy is not greatly jeopardized. We cast this problem as a mixed integer nonlinear program. Due to its nonlinear nature, we then decompose it into separate subproblems for offloading and compression. An efficient algorithm is proposed to solve the problem. Empirically, we show that our algorithm attains roughly a 0.958-approximation of the optimal solution provided by a block coordinate descent method for solving the two sub-problems back-to-back.},
   author      = {Hosseinzadeh, Minoo and Hudson, Nathaniel and Zhao, Xiaobo and Khamfroush, Hana and Lucani, Daniel E.},
-  journal     = {American Journal of Physics,},
-  volume      = {18},
-  number      = {6},
-  pages       = {403--404},
+  booktitle   = {2021 IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN)},
+  pages       = {254-261},
+  month       = {January},
   year        = {2021},
-  publisher   = {American Association of Physics Teachers,}
+  publisher   = ieee
+}
+
+
+@article{hudson2020behavioral,
+  abbr        = {TNSE},
+  author      = {Hudson, Nathaniel and Khamfroush, Hana},
+  journal     = {IEEE Transactions on Network Science and Engineering (TNSE)},
+  title       = {Behavioral Information Diffusion for Opinion Maximization in Online Social Networks},
+  abstract    = {Online social networks provide a platform to diffuse information and influence people's opinion. Conventional models for information diffusion do not take into account the specifics of each users' personality, behavior, and their opinion. This work adopts the “Big Five” model from the social sciences to ascribe each user node with a personality. We propose a behavioral independent cascade (BIC) model that considers the personalities and opinions of user nodes when computing propagation probabilities for diffusion. We use this model to study the opinion maximization (OM) problem and prove it is NP-hard under our BIC model. Under the BIC model, we show that the objective function of the proposed OM problem is not submodular. We then propose an algorithm to solve the OM problem in linear-time based on a state-of-the-art influence maximization (IM) algorithm. We run extensive simulations under four cases where initial opinion is distributed in polarized/non-polarized and community/non-community cases. We find that when communities are polarized, activating a large number of nodes is ineffective towards maximizing opinion. Further, we find that our proposed algorithm outperforms state-of-the-art IM algorithms in terms of maximizing opinion in uniform opinion distribution-despite activating fewer nodes to be spreaders.},
+  volume      = {8},
+  number      = {2},
+  publisher   = ieee,
+  month       = {October},
+  year        = {2020},
+  doi         = {10.1109/TNSE.2020.3034094},
+  pages       = {1259-1268},
+  note        = {Recipient of the 2021 Outstanding Student Paper award from the University of Kentucky Department of Computer Science.},
+  bibtex_show = {true},
+  html        = {https://ieeexplore.ieee.org/abstract/document/9241429?casa_token=QDFBIaN_Ru8AAAAA:nnkNgEvkUVvMRALPF78CjJ7ZuJcREw2FW11hZhIAjgxZK2wAHF_Zjpaf88pMARKitZVxqZkrUYc},
+  selected    = {true}
+}
+
+
+@inproceedings{zhao2020improving,
+  abbr        = {GC},
+  title       = {Improving the Accuracy-Latency Trade-off of Edge-Cloud Computation Offloading for Deep Learning Services},
+  author      = {Zhao, Xiaobo and Hosseinzadeh, Minoo and Hudson, Nathaniel and Khamfroush, Hana and Lucani, Daniel E.},
+  booktitle   = {2020 IEEE Globecom Workshops},
+  abstract    = {Offloading tasks to the edge or the Cloud has the potential to improve accuracy of classification and detection tasks as more powerful hardware and machine learning models can be used. The downside is the added delay introduced for sending the data to the Edge/Cloud. In delay-sensitive applications, it is usually necessary to strike a balance between accuracy and latency. However, the state of the art typically considers offloading all-or-nothing decisions, e.g., process locally or send all available data to the Edge (Cloud). Our goal is to expand the options in the accuracy-latency trade-off by allowing the source to send a fraction of the total data for processing. We evaluate the performance of image classifiers when faced with images that have been purposely reduced in quality in order to reduce traffic costs. Using three common models (SqueezeNet, GoogleNet, ResNet) and two data sets (Caltech101, ImageNet) we show that the Gompertz function provides a good approximation to determine the accuracy of a model given the fraction of the data of the image that is actually conveyed to the model. We formulate the offloading decision process using this new flexibility and show that a better overall accuracy-latency tradeoff is attained: 58% traffic reduction, 25% latency reduction, as well as 12% accuracy improvement.},
+  doi         = {10.1109/GCWkshps50303.2020.9367470},
+  pages       = {1-6},
+  month       = {December},
+  bibtex_show = {true},
+  year        = {2020}
 }
 
 
 
+@inproceedings{hufbauer2020proximity,
+  abbr        = {ICNC},
+  author      = {Hufbauer, Emory and Hudson, Nathaniel and Khamfroush, Hana},
+  booktitle   = {2020 International Conference on Computing, Networking and Communications (ICNC)},
+  title       = {A Proximity-Based Generative Model for Online Social Network Topologies},
+  year        = {2020},
+  pages       = {648-653},
+  abstract    = {Online social networks (OSN) are an increasingly powerful force for information diffusion and opinion sharing in society. Thus, understanding and modeling their structure and behavior is critical. Researchers need vast databases of self-contained, appropriately-sized OSN topologies in order to test and train new algorithms and models to solve problems related to these platforms. In this paper, we present a flexible, robust, and novel model for generating synthetic networks which closely resemble real OSN network systems (e.g., Facebook and Twitter) that include community structures. We also present an automated parameter tuner which can match the model’s output to a given OSN topology. The model can then be used as a data factory to generate testbeds of synthetic topologies which closely resemble the given sample. We compare our model, tuned to match two large real-world OSN network samples, with the Barabási-Albert model and the Lancichinetti-Fortunato-Radicchi benchmark used as baselines. We find that output of our proposed generative model more closely matches the target topologies, than either model, on a variety of important metrics — including clustering coefficient, modularity, assortativity, and average path length. Our model also organically generates robust, realistic communities, with non-trivial inter- and intra-community structure.},
+  keywords    = {},
+  doi         = {10.1109/ICNC47757.2020.9049662},
+  issn        = {2325-2626},
+  month       = {February},
+  bibtex_show = {true}
+}
+
+
+
+@inproceedings{hudson2020smart,
+  abbr        = {SMARTCOMP},
+  author      = {Hudson, Nathaniel and Khamfroush, Hana and Harrison, Brent and Craig, Adam},
+  booktitle   = {2020 IEEE International Conference on Smart Computing (SMARTCOMP)},
+  title       = {Smart Advertisement for Maximal Clicks in Online Social Networks Without User Data},
+  year        = {2020},
+  pages       = {172-179},
+  abstract    = {Smart cities are a growing paradigm in the design of systems that interact with one another for informed and efficient decision making, empowered by data and technology, of resources in a city. The diffusion of information to citizens in a smart city will rely on social trends and smart advertisement. Online social networks (OSNs) are prominent and increasingly important platforms to spread information, observe social trends, and advertise new products. To maximize the benefits of such platforms in sharing information, many groups invest in finding ways to maximize the expected number of clicks as a proxy of these platform's performance. As such, the study of click-through rate (CTR) prediction of advertisements, in environments like online social media, is of much interest. Prior works build machine learning (ML) using user-specific data to classify whether a user will click on an advertisement or not. For our work, we consider a large set of Facebook advertisement data (with no user data) and categorize targeted interests into thematic groups we call conceptual nodes. ML models are trained using the advertisement data to perform CTR prediction with conceptual node combinations. We then cast the problem of finding the optimal combination of conceptual nodes as an optimization problem. Given a certain budget $k$, we are interested in finding the optimal combination of conceptual nodes that maximize the CTR. We discuss the hardness and possible NP-hardness of the optimization problem. Then, we propose a greedy algorithm and a genetic algorithm to find near-optimal combinations of conceptual nodes in polynomial time, with the genetic algorithm nearly matching the optimal solution. We observe that simple ML models can exhibit the high Pearson correlation coefficients w.r.t. click predictions and real click values. Additionally, we find that the conceptual nodes of “politics”, “celebrity”, and “organization” are notably more influential than other considered conceptual nodes.},
+  doi         = {10.1109/SMARTCOMP50058.2020.00042},
+  month       = {September},
+  bibtex_show = {true},
+  arxiv       = {1911.02061}
+}
+
+
+
+@article{khamfroush2019influence,
+  abbr        = {ASN},
+  author      = {Khamfroush, Hana and Hudson, Nathaniel and Iloo, Samuel and Rahnamay-Naeini, Mahshid},
+  journal     = {Springer Applied Network Science},
+  number      = {1},
+  title       = {Influence spread in two-layer interdependent networks: designed single-layer or random two-layer initial spreaders?},
+  abstract    = {Influence spread in multi-layer interdependent networks (M-IDN) has been studied in the last few years; however, prior works mostly focused on the spread that is initiated in a single layer of an M-IDN. In real world scenarios, influence spread can happen concurrently among many or all components making up the topology of an M-IDN. This paper investigates the effectiveness of different influence spread strategies in M-IDNs by providing a comprehensive analysis of the time evolution of influence propagation given different initial spreader strategies. For this study we consider a two-layer interdependent network and a general probabilistic threshold influence spread model to evaluate the evolution of influence spread over time. For a given coupling scenario, we tested multiple interdependent topologies, composed of layers A and B, against four cases of initial spreader selection: (1) random initial spreaders in A, (2) random initial spreaders in both A and B, (3) targeted initial spreaders using degree centrality in A, and (4) targeted initial spreaders using degree centrality in both A and B. Our results indicate that the effectiveness of influence spread highly depends on network topologies, the way they are coupled, and our knowledge of the network structure — thus an initial spread starting in only A can be as effective as initial spread starting in both A and B concurrently. Similarly, random initial spread in multiple layers of an interdependent system can be more severe than a comparable initial spread in a single layer. Our results can be easily extended to different types of event propagation in multi-layer interdependent networks such as information/misinformation propagation in online social networks, disease propagation in offline social networks, and failure/attack propagation in cyber-physical systems.},
+  volume      = {4},
+  month       = {December},
+  year        = {2019},
+  bibtex_show = {true},
+  html        = {https://link.springer.com/article/10.1007/s41109-019-0150-3},
+  pdf         = {https://link.springer.com/content/pdf/10.1007/s41109-019-0150-3.pdf}
+}
+
+
+@inproceedings{hudson2019centrality,
+  abbr        = {ICNC},
+  title       = {On the Effectiveness of Standard Centrality Metrics for Interdependent Networks},
+  author      = {Hudson, Nathaniel and Turner, Matthew and Nkansah, Asare and Khamfroush, Hana},
+  booktitle   = {2020 IEEE International Conference on Computing, Networking, and Communications (ICNC)},
+  abstract    = {This paper investigates the effectiveness of standard centrality metrics for interdependent networks (IDN) in identifying important nodes in preventing catastrophic failure propagation. To show the need for designing specialized centrality metrics for IDNs, we compare the performance of these metrics in an IDN under two different scenarios: i) the nodes with highest centrality of networks composing an IDN are selected separately and ii) the nodes with highest centrality of the entire IDN represented as one single network are calculated. To investigate the resiliency of an IDN, a threshold-based failure propagation model is used to simulate the evolution of failure propagation over time. The nodes with highest centrality are chosen and are assumed to be resistant w.r.t failure. Extensive simulation is conducted to compare the usefulness of standard metrics to stop or slow down the failure propagation in an IDN. Finally a new metric of centrality tailored for interdependent networks is proposed and evaluated. Also, useful guidelines on designing new metrics are presented.},
+  doi         = {10.1109/ICCNC.2019.8685586},
+  issn        = {2325-2626},
+  pages       = {1-6},
+  month       = {February},
+  year        = {2019},
+  bibtex_show = {true}
+}
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
@@ -82,6 +217,7 @@
   publisher   = {Courier Corporation,},
   preview     = {brownian-motion.gif}
 }
+
 
 @article{PhysRev.47.777,
   abbr      = {PhysRev},
@@ -99,8 +235,7 @@
   doi       = {10.1103/PhysRev.47.777},
   url       = {http://link.aps.org/doi/10.1103/PhysRev.47.777},
   html      = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf       = {example_pdf.pdf},
-  selected  = {true}
+  pdf       = {example_pdf.pdf}
 }
 
 @article{einstein1905molekularkinetischen,
