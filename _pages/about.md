@@ -20,7 +20,7 @@ social: true  # includes social icons at the bottom of the page
 
 I am a computer scientist, currently serving as a *Postdoctoral Scholar* at [Globus Labs](https://labs.globus.org/) out of the University of Chicago's Department of Computer Science.
 
-A high-level description of my research is the design of systems for serving AI on edge computing infrastructure — i.e., *Edge Intelligence* (EI) — for smart city applications. More specifcally, my research centers around challenges related to resource limitations available at the edge for supporting EI. Trade-offs between latency, accuracy, resource usage, etc. are common themes in my work.
+A high-level description of my research is the design of systems for serving AI on edge computing infrastructure — i.e., *Edge Intelligence* (EI) — for smart city applications. More specifically, my research centers around challenges related to resource limitations available at the edge for supporting EI. Trade-offs between latency, accuracy, resource usage, etc. are common themes in my work.
 
 Some areas of study my research touches include (but are not limited to):
 * federated learning
