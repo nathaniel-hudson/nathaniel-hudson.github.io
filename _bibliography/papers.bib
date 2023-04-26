@@ -6,7 +6,25 @@
 @string{ieee = {Institute of Electrical and Electronics Engineers}}
 @string{spec = {Standard Performance Evaluation Corporation}}
 
-@inproceedings{baughman2023balancing,
+@article{oza2023deadline,
+  abbr      = {TECS},
+  author    = {Oza, Pratham and Hudson, Nathaniel and Chantem, Thidapat and Khamfroush, Hana},
+  title     = {Deadline-Aware Task Offloading for Vehicular Edge Computing Networks Using Traffic Lights Data},
+  year      = {2023},
+  publisher = acm,
+  address   = {New York, NY, USA},
+  issn      = {1539-9087},
+  url       = {https://doi.org/10.1145/3594541},
+  doi       = {10.1145/3594541},
+  abstract  = {As vehicles become increasingly automated, novel vehicular applications emerge to enhance the safety and security of the vehicles and improve user experience. This brings ever-increasing data and resource requirements for timely computation on the vehicle’s on-board computing systems. To alleviate these demands, prior work propose deploying vehicular edge computing&nbsp;(VEC) resources on the road-side units&nbsp;(RSUs) in the traffic infrastructure to which the vehicles can communicate and offload compute intensive tasks. Due to limited communication range of these RSUs, the communication link between the vehicles and the RSUs and therefore the response times of the offloaded applications are significantly impacted by vehicle’s mobility through road traffic. Existing task offloading strategies do not consider the influence of traffic lights on vehicular mobility while offloading workloads on the RSUs, and thereby cause deadline misses and quality-of-service&nbsp;(QoS) reduction for the offloaded tasks. In this paper, we present a novel task model that captures time and location-specific requirements for vehicular applications. We then present a deadline-based strategy that incorporates traffic light data to opportunistically offload tasks. Our approach allows up to (33% ) more tasks to be offloaded onto the RSUs, compared to existing work, without causing any deadline misses and thereby maximizing the resource utilization on the RSUs.},
+  note      = {Just Accepted},
+  journal   = {ACM Transactions on Embededded Computing Systems},
+  month     = {apr},
+  keywords  = {edge computing, task offloading, connected traffic infrastructure},
+  html      = {https://dl.acm.org/doi/10.1145/3594541}
+}
+
+@inproceedings{bauer2023searching,
   abbr        = {ICPE},
   title       = {Searching for the Ground Truth: Assessing the Similarity of Benchmarking Runs},
   abstract    = {Stable and repeatable measurements are essential for comparing the performance of different systems or applications, and benchmarks are used to ensure accuracy and replication. However, if the corresponding measurements are not stable and repeatable, wrong conclusions can be drawn. To facilitate the task of determining whether the measurements are similar, we used a data set of 586 micro-benchmarks to (i) analyze the data set itself, (ii) examine an approach from related work, and (iii) propose and evaluate a heuristic. To evaluate the different approaches, we perform a peer review to assess the dissimilarity of the benchmark runs. Our results show that this task is challenging even for humans and that our heuristic exhibits a sensitivity of 92%.},
