@@ -7,6 +7,41 @@
 @string{spec = {Standard Performance Evaluation Corporation}}
 @string{preprint = {Preprint}}
 
+@inproceedings{baughman2023tournament,
+  abbr={SC Workshop},
+  author = {Baughman, Matt and Hudson, Nathaniel and Chard, Ryan and Bauer, Andre and Foster, Ian and Chard, Kyle},
+  title = {Tournament-Based Pretraining to Accelerate Federated Learning},
+  year = {2023},
+  isbn = {9798400707858},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3624062.3626089},
+  html = {https://doi.org/10.1145/3624062.3626089},
+  doi = {10.1145/3624062.3626089},
+  abstract = {Advances in hardware, proliferation of compute at the edge, and data creation at unprecedented scales have made federated learning (FL) necessary for the next leap forward in pervasive machine learning. For privacy and network reasons, large volumes of data remain stranded on endpoints located in geographically austere (or at least austere network-wise) locations. However, challenges exist to the effective use of these data. To solve the system and functional level challenges, we present an three novel variants of a serverless federated learning framework. We also present tournament-based pretraining, which we demonstrate significantly improves model performance in some experiments. Overall, these extensions to FL and our novel training method enable greater focus on science rather than ML development.},
+  booktitle = {Proceedings of the SC '23 Workshops of The International Conference on High Performance Computing, Network, Storage, and Analysis},
+  pages = {109–115},
+  numpages = {7},
+  location = {<conf-loc>, <city>Denver</city>, <state>CO</state>, <country>USA</country>, </conf-loc>},
+  series = {SC-W '23}
+}
+
+@article{ooi2023measurement,
+  abbr={IMM},
+  journal={IEEE Instrumentation & Measurement Magazine}, 
+  title={Measurement and Applications: Exploring the Challenges and Opportunities of Hierarchical Federated Learning in Sensor Applications}, 
+  author={Ooi, Melanie Po-Leen and Sohail, Shaleeza and Huang, Victoria Guiying and Hudson, Nathaniel and Baughman, Matt and Rana, Omer and Hinze, Annika and Chard, Kyle and Chard, Ryan and Foster, Ian and Spyridopoulos, Theodoros and Nagra, Harshaan},
+  abstract={Sensor applications have become ubiquitous in modern society as the digital age continues to advance. AI-based techniques (e.g., machine learning) are effective at extracting actionable information from large amounts of data. An example would be an automated water irrigation system that uses AI-based techniques on soil quality data to decide how to best distribute water. However, these AI-based techniques are costly in terms of hardware resources, and Internet-of-Things (IoT) sensors are resource-constrained with respect to processing power, energy, and storage capacity. These limitations can compromise the security, performance, and reliability of sensor-driven applications. To address these concerns, cloud computing services can be used by sensor applications for data storage and processing. Unfortunately, cloud-based sensor applications that require real-time processing, such as medical applications (e.g., fall detection and stroke prediction), are vulnerable to issues such as network latency due to the sparse and unreliable networks between the sensor nodes and the cloud server [1]. As users approach the edge of the communications network, latency issues become more severe and frequent. A promising alternative is edge computing, which provides cloud-like capabilities at the edge of the network by pushing storage and processing capabilities from centralized nodes to edge devices that are closer to where the data are gathered, resulting in reduced network delays [2], [3].},
+  year={2023},
+  volume={26},
+  number={9},
+  pages={21-31},
+  doi={10.1109/MIM.2023.10328671},
+  bibtex_show = {true},
+  html={https://ieeexplore.ieee.org/document/10328671},
+}
+
+
 @inproceedings{hudson2023trillion,
   abbr          = {BDCAT},
   title         = {Trillion Parameter AI Serving Infrastructure for Scientific Discovery: A Survey and Vision}, 

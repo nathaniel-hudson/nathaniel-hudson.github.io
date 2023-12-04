@@ -68,7 +68,11 @@
         {%- assign sameaslinks = sameaslinks | push: link -%}
     {%- endif -%}
     {%- if site.scholar_userid -%}
-        {%- capture link -%}https://scholar.google.com/citations?user={{ site.scholar_userid }}{%- endcapture -%}
+        {%- capture link -%}
+            <!-- Fixed this issue where it wouldn't allow people without Google Scholar accounts to view mine. -->
+            <!-- https://scholar.google.com/citations?user={{ site.scholar_userid }} -->
+            {{ site.scholar_userid }}
+        {%- endcapture -%}
         {%- assign sameaslinks = sameaslinks | push: link -%}
     {%- endif -%}
     {%- if site.publons_id -%}
