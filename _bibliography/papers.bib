@@ -7,6 +7,38 @@
 @string{spec = {Standard Performance Evaluation Corporation}}
 @string{preprint = {Preprint}}
 
+@article{hudson2024qos,
+  abbr={FGCS},
+  author = {Hudson, Nathaniel and Khamfroush, Hana and Baughman, Matt and Lucani, Daniel E. Chard, Kyle and Foster, Ian},
+  title = {QoS-Aware Edge AI Placement and Scheduling with Multiple Implementations in FaaS-based Edge Computing},
+  year = {2024},
+  publisher = {Elsevier},
+  journal = {Future Generation Computer Systems},
+  note = {Recently accepted.},
+  abstract = {Resource constraints on the computing continuum require that we make smart decisions for serving AI-based services at the network edge. AI-based services typically have multiple implementations (e.g., image classification implementations include SqueezeNet, DenseNet, and others) with varying trade-offs (e.g., latency and accuracy). The question then is how should AI-based services be placed across Function-as-a-Service (FaaS) based edge computing systems in order to maximize total Quality-of-Service (QoS). To address this question, we propose a problem that jointly aims to solve (i) edge AI service placement and (ii) request scheduling. These are done across two time-scales (one for placement and one for scheduling). We first cast the problem as an integer linear program. We then decompose the problem into separate placement and scheduling subproblems and prove that both are NP-hard. We then propose a novel placement algorithm that places services while considering device-to-device communication across edge clouds to offload requests to one another. Our results show that the proposed placement algorithm is able to outperform a state-of-the-art placement algorithm for AI-based services, and other baseline heuristics, with regard to maximizing total QoS. Additionally, we present a federated learning-based framework, FLIES, to predict the future incoming service requests and their QoS requirements. Our results also show that our FLIES algorithm is able to outperform a standard decentralized learning baseline for predicting incoming requests and show comparable predictive performance when compared to centralized training.},
+  bibtex_show = {true},
+}
+
+@inproceedings{baughman2023tournament,
+  abbr={SC Workshop},
+  author = {Baughman, Matt and Hudson, Nathaniel and Chard, Ryan and Bauer, Andre and Foster, Ian and Chard, Kyle},
+  title = {Tournament-Based Pretraining to Accelerate Federated Learning},
+  year = {2023},
+  isbn = {9798400707858},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3624062.3626089},
+  html = {https://doi.org/10.1145/3624062.3626089},
+  doi = {10.1145/3624062.3626089},
+  abstract = {Advances in hardware, proliferation of compute at the edge, and data creation at unprecedented scales have made federated learning (FL) necessary for the next leap forward in pervasive machine learning. For privacy and network reasons, large volumes of data remain stranded on endpoints located in geographically austere (or at least austere network-wise) locations. However, challenges exist to the effective use of these data. To solve the system and functional level challenges, we present an three novel variants of a serverless federated learning framework. We also present tournament-based pretraining, which we demonstrate significantly improves model performance in some experiments. Overall, these extensions to FL and our novel training method enable greater focus on science rather than ML development.},
+  booktitle = {Proceedings of the SC '23 Workshops of The International Conference on High Performance Computing, Network, Storage, and Analysis},
+  pages = {109–115},
+  numpages = {7},
+  location = {<conf-loc>, <city>Denver</city>, <state>CO</state>, <country>USA</country>, </conf-loc>},
+  series = {SC-W '23}
+}
+
+
 @inproceedings{baughman2023tournament,
   abbr={SC Workshop},
   author = {Baughman, Matt and Hudson, Nathaniel and Chard, Ryan and Bauer, Andre and Foster, Ian and Chard, Kyle},
