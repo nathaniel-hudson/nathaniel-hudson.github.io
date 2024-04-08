@@ -7,16 +7,39 @@
 @string{spec = {Standard Performance Evaluation Corporation}}
 @string{preprint = {Preprint}}
 
+@article{devaraj2024rural,
+  abbr={Sensor Letters},
+  author={Devaraj, Harish and Sohail, Shaleeza and Li, Boyang and Hudson, Nathaniel and Baughman, Matt and Chard, Kyle and Chard, Ryan and Casella, Enrico and Foster, Ian and Rana, Omer},
+  journal={IEEE Sensors Letters},
+  title={RuralAI in Tomato Farming: Integrated Sensor System, Distributed Computing and Hierarchical Federated Learning for Crop Health Monitoring},
+  year={2024},
+  volume={},
+  number={},
+  pages={1-4},
+  abstract={Precision horticulture is evolving due to scalable sensor deployment and machine learning integration. These advancements boost the operational efficiency of individual farms, balancing the benefits of analytics with autonomy requirements. However, given concerns that affect wide geographic regions (e.g., climate change), there is a need to apply models that span farms. Federated Learning (FL) has emerged as a potential solution. FL enables decentralized machine learning (ML) across different farms without sharing private data. Traditional FL assumes simple 2-tier network topologies and thus falls short of operating on more complex networks found in real-world agricultural scenarios. Networks vary across crops and farms, and encompass various sensor data modes, extending across jurisdictions. New hierarchical FL (HFL) approaches are needed for more efficient and context-sensitive model sharing, accommodating regulations across multiple jurisdictions. We present the RuralAI architecture deployment for tomato crop monitoring, featuring sensor field units for soil, crop, and weather data collection. HFL with personalization is used to offer localized and adaptive insights. Model management, aggregation, and transfers are facilitated via a flexible approach, enabling seamless communication between local devices, edge nodes, and the cloud.},
+  keywords={Sensors;Crops;Monitoring;Fuzzy logic;Cloud computing;Sensor systems;Data models;Rural areas;Horticulture;Precision agriculture;Machine learning;Farming;Distributed computing;Federated learning;Climate change;Internet of Things (IoT);sensor systems;sensor applications;federated learning;precision horticulture},
+  doi={10.1109/LSENS.2024.3384935},
+  html={https://ieeexplore.ieee.org/document/10492864},
+  bibtex_show = {true}
+}
+
+
 @article{hudson2024qos,
   abbr={FGCS},
-  author = {Hudson, Nathaniel and Khamfroush, Hana and Baughman, Matt and Lucani, Daniel E. and Chard, Kyle and Foster, Ian},
-  title = {QoS-Aware Edge AI Placement and Scheduling with Multiple Implementations in FaaS-based Edge Computing},
-  year = {2024},
-  publisher = {Elsevier},
+  title = {QoS-aware edge AI placement and scheduling with multiple implementations in FaaS-based edge computing},
   journal = {Future Generation Computer Systems},
-  note = {Recently accepted.},
+  volume = {157},
+  pages = {250-263},
+  year = {2024},
+  issn = {0167-739X},
+  doi = {https://doi.org/10.1016/j.future.2024.03.035},
+  url = {https://www.sciencedirect.com/science/article/pii/S0167739X24001067},
+  author = {Nathaniel Hudson and Hana Khamfroush and Matt Baughman and Daniel E. Lucani and Kyle Chard and Ian Foster},
+  keywords = {Service placement, Federated learning, Serverless edge computing, Edge intelligence, Quality-of-service},
   abstract = {Resource constraints on the computing continuum require that we make smart decisions for serving AI-based services at the network edge. AI-based services typically have multiple implementations (e.g., image classification implementations include SqueezeNet, DenseNet, and others) with varying trade-offs (e.g., latency and accuracy). The question then is how should AI-based services be placed across Function-as-a-Service (FaaS) based edge computing systems in order to maximize total Quality-of-Service (QoS). To address this question, we propose a problem that jointly aims to solve (i) edge AI service placement and (ii) request scheduling. These are done across two time-scales (one for placement and one for scheduling). We first cast the problem as an integer linear program. We then decompose the problem into separate placement and scheduling subproblems and prove that both are NP-hard. We then propose a novel placement algorithm that places services while considering device-to-device communication across edge clouds to offload requests to one another. Our results show that the proposed placement algorithm is able to outperform a state-of-the-art placement algorithm for AI-based services, and other baseline heuristics, with regard to maximizing total QoS. Additionally, we present a federated learning-based framework, FLIES, to predict the future incoming service requests and their QoS requirements. Our results also show that our FLIES algorithm is able to outperform a standard decentralized learning baseline for predicting incoming requests and show comparable predictive performance when compared to centralized training.},
-  bibtex_show = {true},
+  html = {https://www.sciencedirect.com/science/article/pii/S0167739X24001067},
+  selected    = {true},
+  bibtex_show = {true}
 }
 
 @inproceedings{baughman2023tournament,
@@ -40,8 +63,8 @@
 
 @article{ooi2023measurement,
   abbr={IMM},
-  journal={IEEE Instrumentation \& Measurement Magazine}, 
-  title={Measurement and Applications: Exploring the Challenges and Opportunities of Hierarchical Federated Learning in Sensor Applications}, 
+  journal={IEEE Instrumentation \& Measurement Magazine},
+  title={Measurement and Applications: Exploring the Challenges and Opportunities of Hierarchical Federated Learning in Sensor Applications},
   author={Ooi, Melanie Po-Leen and Sohail, Shaleeza and Huang, Victoria Guiying and Hudson, Nathaniel and Baughman, Matt and Rana, Omer and Hinze, Annika and Chard, Kyle and Chard, Ryan and Foster, Ian and Spyridopoulos, Theodoros and Nagra, Harshaan},
   abstract={Sensor applications have become ubiquitous in modern society as the digital age continues to advance. AI-based techniques (e.g., machine learning) are effective at extracting actionable information from large amounts of data. An example would be an automated water irrigation system that uses AI-based techniques on soil quality data to decide how to best distribute water. However, these AI-based techniques are costly in terms of hardware resources, and Internet-of-Things (IoT) sensors are resource-constrained with respect to processing power, energy, and storage capacity. These limitations can compromise the security, performance, and reliability of sensor-driven applications. To address these concerns, cloud computing services can be used by sensor applications for data storage and processing. Unfortunately, cloud-based sensor applications that require real-time processing, such as medical applications (e.g., fall detection and stroke prediction), are vulnerable to issues such as network latency due to the sparse and unreliable networks between the sensor nodes and the cloud server [1]. As users approach the edge of the communications network, latency issues become more severe and frequent. A promising alternative is edge computing, which provides cloud-like capabilities at the edge of the network by pushing storage and processing capabilities from centralized nodes to edge devices that are closer to where the data are gathered, resulting in reduced network delays [2], [3].},
   year={2023},
@@ -56,7 +79,7 @@
 
 @inproceedings{hudson2024trillion,
   abbr          = {BDCAT},
-  title         = {Trillion Parameter AI Serving Infrastructure for Scientific Discovery: A Survey and Vision}, 
+  title         = {Trillion Parameter AI Serving Infrastructure for Scientific Discovery: A Survey and Vision},
   author        = {Nathaniel Hudson and J. Gregory Pauloski and Matt Baughman and Alok Kamatar and Mansi Sakarvadia and Logan Ward and Ryan Chard and Andr\'{e} Bauer and Maksim Levental and Wenyi Wang and Will Engler and Owen Price Skelly and Ben Blaiszik and Rick Stevens and Kyle Chard and Ian Foster},
   abstract      = {Deep learning methods are transforming research, enabling new techniques, and ultimately leading to new discoveries. As the demand for more capable AI models continues to grow, we are now entering an era of Trillion Parameter Models (TPM), or models with more than a trillion parameters---such as Huawei's PanGu-$\Sigma$. We describe a vision for the ecosystem of TPM users and providers that caters to the specific needs of the scientific community. We then outline the significant technical challenges and open problems in system design for serving TPMs to enable scientific research and discovery. Specifically, we describe the requirements of a comprehensive software stack and interfaces to support the diverse and flexible requirements of researchers.},
   booktitle     = {Proceedings of the IEEE/ACM International Conference on Big Data Computing, Applications and Technologies},
@@ -69,7 +92,7 @@
 
 @misc{sakarvadia2023attention,
   abbr          = preprint,
-  title         = {Attention Lens: A Tool for Mechanistically Interpreting the Attention Head Information Retrieval Mechanism}, 
+  title         = {Attention Lens: A Tool for Mechanistically Interpreting the Attention Head Information Retrieval Mechanism},
   author        = {Mansi Sakarvadia and Arham Khan and Aswathy Ajith and Daniel Grzenda and Nathaniel Hudson and André Bauer and Kyle Chard and Ian Foster},
   abstract      = {Transformer-based Large Language Models (LLMs) are the state-of-the-art for nat- ural language tasks. Recent work has attempted to decode, by reverse engineering the role of linear layers, the internal mechanisms by which LLMs arrive at their final predictions for text completion tasks. Yet little is known about the specific role of attention heads in producing the final token prediction. We propose Attention Lens, a tool that enables researchers to translate the outputs of attention heads into vocabulary tokens via learned attention-head-specific transformations called lenses. Preliminary findings from our trained lenses indicate that attention heads play highly specialized roles in language models. The code for Attention Lens is available at github.com/msakarvadia/AttentionLens.},
   year          = {2023},
@@ -81,8 +104,8 @@
 }
 
 @misc{sakarvadia2023memory,
-  abbr          = {BlackBoxNLP}, 
-  title         = {Memory Injections: Correcting Multi-Hop Reasoning Failures during Inference in Transformer-Based Language Models}, 
+  abbr          = {BlackBoxNLP},
+  title         = {Memory Injections: Correcting Multi-Hop Reasoning Failures during Inference in Transformer-Based Language Models},
   author        = {Mansi Sakarvadia and Aswathy Ajith and Arham Khan and Daniel Grzenda and Nathaniel Hudson and André Bauer and Kyle Chard and Ian Foster},
   abstract      = {Answering multi-hop reasoning questions requires retrieving and synthesizing information from diverse sources. Large Language Models (LLMs) struggle to perform such reasoning consistently. Here we propose an approach to pinpoint and rectify multi-hop reasoning failures through targeted memory injections on LLM attention heads. First, we analyze the per-layer activations of GPT-2 models in response to single and multi-hop prompts. We then propose a mechanism that allows users to inject pertinent prompt-specific information, which we refer to as "memories," at critical LLM locations during inference. By thus enabling the LLM to incorporate additional relevant information during inference, we enhance the quality of multi-hop prompt completions. We show empirically that a simple, efficient, and targeted memory injection into a key attention layer can often increase the probability of the desired next token in multi-hop tasks, by up to 424\%.},
   year          = {2023},
@@ -96,8 +119,8 @@
 }
 
 @inproceedings{rajani2023adversarial,
-  abbr          = {WF-IoT}, 
-  title         = {Adversarial Predictions of Data Distributions Across Federated Internet-of-Things Devices}, 
+  abbr          = {WF-IoT},
+  title         = {Adversarial Predictions of Data Distributions Across Federated Internet-of-Things Devices},
   author        = {Samir Rajani and Dario Dematties and Nathaniel Hudson and Kyle Chard and Nicola Ferrier and Rajesh Sankaran and Peter Beckman},
   booktitle     = {2023 IEEE World Forum on Internet of Things (WF-IoT)},
   publisher     = ieee,
@@ -110,7 +133,7 @@
 
 @inproceedings{pauloski2023accelerating,
   abbr          = {Supercomputing},
-  title         = {Accelerating Communications in Federated Applications with Transparent Object Proxies}, 
+  title         = {Accelerating Communications in Federated Applications with Transparent Object Proxies},
   author        = {J. Gregory Pauloski and Valerie Hayot-Sasson and Logan Ward and Nathaniel Hudson and Charlie Sabino and Matt Baughman and Kyle Chard and Ian Foster},
   booktitle     = {Proceedings of the International Conference on High Performance Computing, Networking, Storage and Analysis},
   year          = {2023},
@@ -125,16 +148,16 @@
 
 @inproceedings{rana2023hierarchical,
   abbr          = {Cloud Continuum},
-  title         = {Hierarchical and Decentralised Federated Learning}, 
+  title         = {Hierarchical and Decentralised Federated Learning},
   author        = {Omer Rana and Theodoros Spyridopoulos and Nathaniel Hudson and Matt Baughman and Kyle Chard and Ian Foster and Aftab Khan},
-  abstract      = {Federated learning has shown enormous promise as a way of training ML models in distributed environments while reducing communication costs and protecting data privacy. However, the rise of complex cyber-physical systems, such as the Internet-of-Things, presents new challenges that are not met with traditional FL methods. Hierarchical Federated Learning extends the traditional FL process to enable more efficient model aggregation based on application needs or characteristics of the deployment environment (e.g., resource capabilities and/or network connectivity). It illustrates the benefits of balancing processing across the cloud-edge continuum. Hierarchical Federated Learning is likely to be a key enabler for a wide range of applications, such as smart farming and smart energy management, as it can improve performance and reduce costs, whilst also enabling FL workflows to be deployed in environments that are not well-suited to traditional FL. Model aggregation algorithms, software frameworks, and infrastructures will need to be designed and implemented to make such solutions accessible to researchers and engineers across a growing set of domains. 
+  abstract      = {Federated learning has shown enormous promise as a way of training ML models in distributed environments while reducing communication costs and protecting data privacy. However, the rise of complex cyber-physical systems, such as the Internet-of-Things, presents new challenges that are not met with traditional FL methods. Hierarchical Federated Learning extends the traditional FL process to enable more efficient model aggregation based on application needs or characteristics of the deployment environment (e.g., resource capabilities and/or network connectivity). It illustrates the benefits of balancing processing across the cloud-edge continuum. Hierarchical Federated Learning is likely to be a key enabler for a wide range of applications, such as smart farming and smart energy management, as it can improve performance and reduce costs, whilst also enabling FL workflows to be deployed in environments that are not well-suited to traditional FL. Model aggregation algorithms, software frameworks, and infrastructures will need to be designed and implemented to make such solutions accessible to researchers and engineers across a growing set of domains.
 H-FL also introduces a number of new challenges. For instance, there are implicit infrastructural challenges. There is also a trade-off between having generalised models and personalised models. If there exist geographical patterns for data (e.g., soil conditions in a smart farm likely are related to the geography of the region itself), then it is crucial that models used locally can consider their own locality in addition to a globally-learned model. H-FL will be crucial to future FL solutions as it can aggregate and distribute models at multiple levels to optimally serve the trade-off between locality dependence and global anomaly robustness.},
   booktitle     = {2022 Cloud Computing},
   pages         = {1--9},
   year          = {2022},
   bibtex_show   = {true},
   arxiv         = {2304.14982},
-  html          = {https://ieeexplore.ieee.org/document/10419094} 
+  html          = {https://ieeexplore.ieee.org/document/10419094}
 }
 
 @article{oza2023deadline,
