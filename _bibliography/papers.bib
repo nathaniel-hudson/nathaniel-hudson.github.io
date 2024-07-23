@@ -7,6 +7,65 @@
 @string{spec = {Standard Performance Evaluation Corporation}}
 @string{preprint = {Preprint}}
 
+
+@inproceedings{pauloski2024taps,
+  abbr        = {eScience},
+  title       = {{TaPS}: A Perormance Evaluation Suite for Task-based Execution Frameworks},
+  abstract    = {
+    Task-based execution frameworks, such as in parallel programming libraries, computational workflow systems, 
+    and function-as-a-service platforms, enable the composition of distinct tasks into a single, unified application 
+    designed to achieve a computational goal. Task-based execution frameworks abstract the parallel execution of an 
+    application's tasks on arbitrary hardware. Research into these task executors has accelerated as computational 
+    sciences increasingly need to take advantage of parallel compute and/or heterogeneous hardware. However, the 
+    lack of evaluation standards makes it challenging to compare and contrast novel systems against existing implementations.
+    Here, we introduce {TaPS}, the Task Performance Suite, to support continued research in parallel task executor frameworks.
+    {TaPS} provides (1) a unified, modular interface for writing and evaluating applications using arbitrary execution 
+    frameworks and data management systems and (2) an initial set of synthetic and real-world science applications available 
+    within {TaPS}. We discuss how the design of {TaPS} supports the reliable evaluation of frameworks and demonstrate {TaPS} 
+    through a survey of benchmarks using the provided reference applications.
+  },
+  author      = {
+    Pauloski, J. Gregory and Hayot-Sasson, Valere and Gonthier, Maxime and Hudson, Nathaniel and 
+    Pan, Haochen and Zhou, Sicheng and Foster, Ian and Chard, Kyle
+  },
+  year = {2024},
+  booktitle   = {2024 IEEE International Conference on e-Science},
+  publisher   = ieee,
+  bibtex_show = {true}
+}
+
+
+@inproceedings{bauer2024empirical,
+  abbr        = {eScience},
+  title       = {An Empirical Investigation of Container Building Strategies and Warm Times to Reduce Cold Starts in Scientific Computing Serverless Functions},
+  abstract    = {
+    Serverless computing has revolutionized application development and deployment by abstracting 
+    infrastructure management, allowing developers to focus on writing code. To do so, serverless 
+    platforms dynamically create execution environments, often using containers. The cost to create 
+    and deploy these environments is known as ``cold start'' latency, and this cost can be 
+    particularly detrimental to scientific computing workloads characterized by sporadic and dynamic 
+    demands. We investigate methods to mitigate cold start issues in scientific computing applications 
+    by pre-installing Python packages in container images. Using data from Globus Compute and Binder, 
+    we empirically analyze cold start behavior and evaluate four strategies for building containers, 
+    including fully pre-built environments and dynamic, on-demand installations. Our results show that 
+    pre-installing all packages reduces initial cold start time but requires significant storage. 
+    Conversely, dynamic installation offers lower storage requirements but incurs repetitive delays. 
+    Additionally, we implemented a simulator and assessed the impact of different warm times, finding 
+    that moderate warm times significantly reduce cold starts without the excessive overhead of maintaining 
+    always-hot states.
+  },
+  author      = {
+    Bauer, Andr\'{e} and Gonthier, Maxime and Pan, Haochen and
+    Chard, Ryan and Grzenda, Daniel and Straesser, Martin and 
+    Pauloski, J. Gregory and Kamatar, Alok and Baughman, Matt and
+    Hudson, Nathaniel and Foster, Ian and Chard, Kyle
+  },
+  year = {2024},
+  booktitle   = {2024 IEEE International Conference on e-Science},
+  publisher   = ieee,
+  bibtex_show = {true}
+}
+
 @article{shah2024causal,
   abbr=preprint,
   title={Causal Discovery over High-Dimensional Structured Hypothesis Spaces with Causal Graph Partitioning},
