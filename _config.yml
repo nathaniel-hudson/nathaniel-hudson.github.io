@@ -40,7 +40,7 @@ repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -66,9 +66,10 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
+bluesky_username: nathaniel-hudson.bsky.social
 github_username: nathaniel-hudson # your GitHub user name
 gitlab_username: # your GitLab user name
-twitter_username: Nchudson95 # your Twitter handle
+twitter_username: # Nchudson95 # your Twitter handle
 linkedin_username: nathaniel-hudson-486b8575 # your LinkedIn user name
 scholar_userid: https://scholar.google.com/citations?hl=en&user=_fXM3BMAAAAJ # your Google Scholar ID (profile url)
 orcid_id: 0000-0001-7474-2689 # your ORCID ID
@@ -327,8 +328,11 @@ bootstrap:
     css: "sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY="
     js: "sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8="
 fontawesome:
-  version: "5.15.4"
-  integrity: "sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4="
+  # version: "5.15.4"
+  # integrity: "sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4="
+  # version: "6.7.1"
+  # integrity: "sha512-gUmZC4CtgECJeVW1aeRk2AmpdQsl1ABsR8Cp4PmvANxm+TzwNNpe2MoJT/htbYsn0GR9+sIMDrd9vT9Pt0ZANA=="
+  # js: '<script src="https://kit.fontawesome.com/5016eccfdd.js" crossorigin="anonymous"></script>'
 jquery:
   version: "3.6.0"
   integrity: "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
