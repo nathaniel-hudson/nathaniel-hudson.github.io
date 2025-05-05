@@ -1,12 +1,13 @@
 ---
 layout: page
 permalink: /news/
-title: news
+title: News
 description: Full news ordered in reverse chronological order.
 years: [2022, 2021] # [1967, 1956, 1950, 1935, 1905]
 nav: true
 nav_order: 1
 ---
+
 <!-- _pages/news.md -->
 <div class="news">
 

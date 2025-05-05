@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: A brief introduction. # <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
@@ -13,25 +13,24 @@ profile:
     <p>5730 S Ellis Ave</p>
     <p>Chicago, IL 60637</p>
 
-news: true  # includes a list of news items
+news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
 ---
 
-I am a computer scientist, currently serving as a *Postdoctoral Scholar* at [Globus Labs](https://labs.globus.org/) out of the University of Chicago's Department of Computer Science.
+I am an _Assistant Professor of Computer Science_ at the Illinois Institute of Technology.
 
-A high-level description of my research is the design of systems for serving AI on edge computing infrastructure — i.e., *Edge Intelligence* (EI) — for smart city applications. More specifically, my research centers around challenges related to resource limitations available at the edge for supporting EI. Trade-offs between latency, accuracy, resource usage, etc. are common themes in my work.
+A high-level description of my research is the design of systems for serving AI on edge computing infrastructure — i.e., _Edge Intelligence_ (EI) — for smart city applications. More specifically, my research centers around challenges related to resource limitations available at the edge for supporting EI. Trade-offs between latency, accuracy, resource usage, etc. are common themes in my work.
 
 Some areas of study my research touches include (but are not limited to):
-* federated learning
-* service placement and request scheduling
-* lossy compression techniques
-* social mining
-* modeling of information diffusion processes
-* interdependent and complex networks
-* cyber-physical systems
 
-
+- federated learning
+- service placement and request scheduling
+- lossy compression techniques
+- social mining
+- modeling of information diffusion processes
+- interdependent and complex networks
+- cyber-physical systems
 
 <!--
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
