@@ -20,5 +20,5 @@ end
 group :other_plugins do
     gem 'httparty'
     gem 'feedjira'
-    gem 'rmagick'
+    # gem 'rmagick'
 end
