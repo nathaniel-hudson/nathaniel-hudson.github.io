@@ -7,6 +7,42 @@
 @string{spec = {Standard Performance Evaluation Corporation}}
 @string{preprint = {Preprint}}
 
+
+@article{hudson2025flight,
+  abbr        = fgcs,
+  title       = {Flight: A {FaaS}-Based Framework for Complex and Hierarchical Federated Learning},
+  author      = {
+    Hudson, Nathaniel and 
+    Hayot-Sasson, Valerie and 
+    Babuji, Yadu and 
+    Baughman, Matt and 
+    Pauloski, J Gregory and 
+    Chard, Ryan and 
+    Foster, Ian and 
+    Chard, Kyle
+  },
+  abstract    = {
+    Federated Learning (FL) is a decentralized machine learning paradigm where models are trained 
+    on distributed devices and are aggregated at a central server. Existing FL frameworks assume 
+    simple two-tier network topologies where end devices are directly connected to the aggregation 
+    server. While this is a practical mental model, it does not exploit the inherent topology of 
+    real-world distributed systems like the Internet-of-Things. We present Flight, a novel FL 
+    framework that supports complex hierarchical multi-tier topologies, asynchronous aggregation, 
+    and decouples the control plane from the data plane. We compare the performance of Flight against 
+    Flower, a state-of-the-art FL framework. Our results show that Flight scales beyond Flower, 
+    supporting up to 2048 simultaneous devices, and reduces FL makespan across several models. 
+    Finally, we show that Flight's hierarchical FL model can reduce communication overheads by 
+    more than 60\%.
+  },
+  journal     = {Future Generation Computer Systems},
+  selected    = {true},
+  arxiv       = {2409.16495},
+  bibtex_show = {true},
+  year        = {2025},
+  show_abstract = {true},
+  preview     = {hfl-flight-system.png}
+}
+
 @article{hayotsasson2025aero,
   abbr=preprint,
   title={{AERO}: An autonomous platform for continuous research},
@@ -83,17 +119,6 @@
   arxiv={2410.12927},
   bibtex_show={true},
   year={2024}
-}
-
-@article{hudson2024flight,
-  abbr     = preprint,
-  title    = {Flight: A FaaS-Based Framework for Complex and Hierarchical Federated Learning},
-  author   = {Hudson, Nathaniel and Hayot-Sasson, Valerie and Babuji, Yadu and Baughman, Matt and Pauloski, J Gregory and Chard, Ryan and Foster, Ian and Chard, Kyle},
-  journal  = {arXiv preprint arXiv:2409.16495},
-  selected = {true},
-  arxiv    = {2409.16495},
-  bibtex_show={true},
-  year     = {2024}
 }
 
 @inproceedings{pauloski2024taps,
