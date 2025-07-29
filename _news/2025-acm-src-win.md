@@ -1,4 +1,5 @@
 ---
+title: Jordan Pettyjohn wins 1st Place in the ACM SRC Grand Finals
 layout: post
 date: 2025-05-20 15:59:00-0400
 inline: true
