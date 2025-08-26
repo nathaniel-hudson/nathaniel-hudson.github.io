@@ -9,9 +9,9 @@ profile:
   image: prof_pic.jpg
   image_cicular: false # crops the image to make it circular
   address: >
-    <p>312 John Crerar Library</p>
-    <p>5730 S Ellis Ave</p>
-    <p>Chicago, IL 60637</p>
+    <p>228E Stuart Building</p>
+    <p>10 West 31st Street</p>
+    <p>Chicago, IL 60616</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
