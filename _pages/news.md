@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 layout: page
 permalink: /news/
@@ -34,3 +35,13 @@ nav_order: 1
     {%- endif %}
 
 </div>
+||||||| 2fadee6a
+=======
+---
+layout: page
+title: news
+permalink: /news/
+---
+
+{% include news.liquid %}
+>>>>>>> upstream/master

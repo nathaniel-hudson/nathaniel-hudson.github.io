@@ -4,7 +4,7 @@ permalink: /teaching/
 title: teaching
 description: High-level description of teaching background.
 nav: true
-nav_order: 5
+nav_order: 6
 ---
 
 ### Graduate Teaching Assistant (University of Kentucky), 2017-2019
