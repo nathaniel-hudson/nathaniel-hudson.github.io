@@ -1,12 +1,22 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
+title: Teaching
 description: High-level description of teaching background.
 nav: true
 nav_order: 6
 ---
 
+### Assistant Professor @ Illinois Tech
+
+#### CS 595: Decentralized Machine Learning Systems
+
+This is an original course based around many topics related to my research in federated learning, decentralized learning, edge computing, Internet-of-Things, etc.
+
+> **Description:** 
+> The vast majority of data are naturally decentralized. Modern approaches to Artificial Intelligence (AI) — which are trained on large-scale, centralized infrastructure—are insufficient to learn from the majority of data available. To this end, machine learning methods that can span from the cloud to the network edge are needed. This course will investigate the state-of-the-art literature for learning across decentralized data. This course will largely focus on AI on edge and fog computing systems. The course will include lectures on subject areas that include (but are not limited to) edge/fog computing, complex systems, machine learning, federated learning, split learning, gossip learning, system and statistical heterogeneity, and knowledge aggregation methods. The course will also task students to design and complete their own project to investigate a research question related to the course material. Student-led paper discussions will also be had to learn from the latest state-of-the-art.
+
+<!--
 ### Graduate Teaching Assistant (University of Kentucky), 2017-2019
 Served as a teaching assistant across a plethora of domains in computer science. During my two-year tenure, I was **twice** nominated by the students for annual the "Outstanding Graduate Teaching Assistant" award. Below is a list of the courses I served under:
 * Systems Programming (CS 270), Spring 2019 -- lab insructor and grader.
@@ -35,3 +45,4 @@ Served as an on-campus academic tutor for the following courses:
 ***
 ### Undergraduate Teaching Assistant (Northern Kentucky University), 2016
 Served as a TA for CSC 364 (Data Structures & Algorithms). This course was taught using a team-led, project-based learning model in order to enforce the material of the course in a collaborative and thought-provoking way. As a Teaching Assistant, I was responsible for six groups of students primarily to make sure that these groups were understanding the material and to answer any questions they might have. Along with this role, I was responsible for grading these students' in-class projects and provide feedback throughout the semester.
+-->

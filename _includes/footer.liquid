@@ -1,5 +1,6 @@
 {% if site.footer_fixed %}
-  <footer class="fixed-bottom" role="contentinfo">
+
+  <footer class="fixed-bottom border-top" role="contentinfo">
     <div class="container mt-0">
       &copy; Copyright {{ site.time | date: '%Y' }}
       {{ site.first_name }}
@@ -13,12 +14,15 @@
       {% endif %}
     </div>
   </footer>
+
 {% else %}
+
   <footer class="sticky-bottom mt-5" role="contentinfo">
     {% if site.newsletter.enabled %}
       {% include scripts/newsletter.liquid %}
     {% endif %}
 
+    <!--
     <div class="container">
       &copy; Copyright {{ site.time | date: '%Y' }}
       {{ site.first_name }}
@@ -31,5 +35,40 @@
         Last updated: {{ 'now' | date: '%B %d, %Y' }}.
       {% endif %}
     </div>
+    -->
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-4 text-left">
+          <i class="fas fa-envelope"></i> 
+          <span style="color: var(--global-theme-color);">nhudson5 'at' illinoistech 'dot' edu</span>
+          
+          <br>
+          <i class="fab fa-github"></i> 
+          <a href="https://github.com/nathaniel-hudson/" target="_blank">github</a>
+          
+          <br>
+          <i class="fab fa-bluesky"></i> 
+          <a href="https://bsky.app/profile/nathaniel-hudson.bsky.social" target="_blank">bsky</a>
+
+          <br>
+          <i class="ai ai-orcid"></i>
+          <a href="https://orcid.org/0000-0001-7474-2689" target="_blank">orcid</a>
+        </div>
+
+        <div class="col-8 text-left">
+          Nathaniel Hudson is an Assistant Professor of Computer Science at the 
+          <a href="https://iit.edu" target="_blank">Illinois Institute of Technology</a> 
+          in the Department of Computer Science. His research studies the design of systems 
+          for serving AI on edge computing infrastructure — i.e., <i>Edge Intelligence</i> (EI) — 
+          for smart city applications. 
+        </div>
+
+      </div>
+    </div>
+
   </footer>
+
+  
 {% endif %}

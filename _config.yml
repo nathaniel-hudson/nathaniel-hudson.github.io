@@ -2,7 +2,7 @@
 
 # -----------------------------------------------------------------------------
 # Site settings
-title: blank # the website title (if blank, full name will be used instead)
+title: Nathaniel Hudson # the website title (if blank, full name will be used instead)
 first_name: Nathaniel
 middle_name:
 last_name: Hudson
@@ -13,9 +13,9 @@ footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 # Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: nathaniel-hudson, nathaniel, hudson, computer science # add your own keywords or leave empty
+keywords: nathaniel-hudson, nathaniel, hudson, computer science, edge intelligence, edge ai # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 🎲 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://nathaniel-hudson.github.io # the base hostname & protocol for your site
 baseurl: / # the subpath of your site, e.g. /blog/
@@ -52,13 +52,13 @@ rss_icon: false
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: true
 socials_in_search: true
 bib_search: true
 
 # Dimensions
-max_width: 930px
+max_width: 800px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -85,7 +85,7 @@ flickr_id: # your flickr id
 github_username: nathaniel-hudson # your GitHub user name
 gitlab_username: # your GitLab user name
 ieee_id: # your ieeexplore.ieee.org/author/id
-inspirehep_id: 1010907 # Inspire HEP author ID
+inspirehep_id: # Inspire HEP author ID
 instagram_id: # your instagram id
 kaggle_id: # your kaggle id
 keybase_username: # your keybase user name
@@ -139,7 +139,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_description: # a simple whitespace theme for academics
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -209,8 +209,9 @@ announcements:
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
+# This is for blogs
 latest_posts:
-  enabled: true
+  enabled: false # true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 
@@ -249,6 +250,12 @@ exclude:
   - package.json
   - package-lock.json
   - _pages/about_einstein.md
+  - _pages/blog.md
+  - _pages/projects.md
+  - _projects/
+  - _pages/repositories.md
+  - _pages/profiles.md
+  - blog/
   - purgecss.config.js
   - README.md
   - readme_preview/
@@ -299,16 +306,16 @@ jekyll-minifier:
 # Jekyll Archives
 # -----------------------------------------------------------------------------
 
-jekyll-archives:
-  enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
-  layouts:
-    year: archive-year
-    tag: archive-tag
-    category: archive-category
-  permalinks:
-    year: "/blog/:year/"
-    tag: "/blog/tag/:name/"
-    category: "/blog/category/:name/"
+# jekyll-archives:
+#   enabled: [] # [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+#   layouts:
+#     year: archive-year
+#     tag: archive-tag
+#     category: archive-category
+#   permalinks:
+#     year: "/blog/:year/"
+#     tag: "/blog/tag/:name/"
+#     category: "/blog/category/:name/"
 
 display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
 display_categories: ["external-services"] # these categories will be displayed on the front page of your blog

@@ -1,12 +1,12 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: A brief introduction. # <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
-  align: right
-  image: prof_pic.jpg
+  align: left
+  image: prof_pic_2025.jpg
   image_cicular: false # crops the image to make it circular
   address: >
     <p>228E Stuart Building</p>
@@ -15,12 +15,17 @@ profile:
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 ---
 
-I am a computer scientist, currently serving as an *Assistant Professor* at the [Illinois Institute of Technology](https://iit.edu/) in the Department of Computer Science.
+<!-- 
+Nathaniel Hudson is an Assistant Professor of Computer Science at the [Illinois Institute of Technology](https://iit.edu/) 
+in the Department of Computer Science.
 
-A high-level description of my research is the design of systems for serving AI on edge computing infrastructure — i.e., *Edge Intelligence* (EI) — for smart city applications. More specifically, my research centers around challenges related to resource limitations available at the edge for supporting EI. Trade-offs between latency, accuracy, resource usage, etc. are common themes in my work.
+A high-level description of my research is the design of systems for serving AI on edge computing infrastructure — i.e., 
+*Edge Intelligence* (EI) — for smart city applications. More specifically, my research centers around challenges related 
+to resource limitations available at the edge for supporting EI. Trade-offs between latency, accuracy, resource usage, etc. 
+are common themes in my work.
 
 Some areas of study my research touches include (but are not limited to):
 * federated learning
@@ -29,14 +34,59 @@ Some areas of study my research touches include (but are not limited to):
 * social mining
 * modeling of information diffusion processes
 * interdependent and complex networks
-* cyber-physical systems
-
-
-
-<!--
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+* cyber-physical systems 
 -->
+
+**Assistant Professor** of [Computer Science](https://www.iit.edu/computer-science) at the [Illinois Institute of Technology](https://iit.edu/)
+<br>
+**Area:** Decentralized Machine Learning Systems
+<br>
+**Focuses:** Federated and Decentralized Learning • Cyber-Physical Systems • AI-for-Science • Complex Networks
+<br>
+**Lab:** DICE Lab
+
+<div class="d-flex flex-wrap justify-content-between">
+  
+  <div class="d-flex">
+    <p>
+      <i class="mr-1 fas fa-university"></i> 
+      <a href="https://www.iit.edu/directory/people/nathaniel-hudson" target="_blank">directory</a>
+    </p>
+  </div>
+  
+  <div class="d-flex">
+    <p>
+      <i class="mr-1 fab fa-github"></i> 
+      <a href="https://github.com/nathaniel-hudson/" target="_blank">github</a>
+    </p>
+  </div>
+
+  <div class="d-flex">
+    <p>
+      <i class="mr-1 fab fa-bluesky"></i> 
+      <a href="https://bsky.app/profile/nathaniel-hudson.bsky.social" target="_blank">bsky</a>
+    </p>
+  </div>
+
+  <div class="d-flex">
+    <p>
+      <i class="mr-1 ai ai-orcid"></i> 
+      <a href="https://orcid.org/0000-0001-7474-2689" target="_blank">orcid</a>
+    </p>
+  </div>
+
+  <div class="d-flex">
+    <p>
+      <i class="mr-1 fab fa-linkedin-in mr-1"></i>
+      <a href="https://www.linkedin.com/in/nathaniel-hudson-486b8575/" target="_blank">linkedin</a>
+    </p>
+  </div>
+  
+  <div class="d-flex">
+    <p>
+      <i class="mr-1 ai ai-google-scholar"></i> 
+      <a href="https://scholar.google.com/citations?user=fXM3BMAAAAJ" target="_blank">scholar</a>
+    </p>
+  </div>
+
+</div>
